@@ -1,4 +1,3 @@
-FROM ubuntu:20.04
-WORKDIR /app
-COPY . .
-CMD ["echo", "Hello from Docker!"]
+FROM nginx:alpine
+COPY . /usr/share/nginx/html
+EXPOSE 80
